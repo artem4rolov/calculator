@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTAINER 
+=========================================*/
+
+.container {
+    width: 420px;
+    height: 420px;
+    background-color: #363636;
+    border: solid 1px;
+    border-radius: 10px;
+    
+    margin: auto;
+}
+
+
+/* INPUTS
+=========================================*/
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.inputs input{
+    width: 107px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* BUTTONS OPERATIONS
+=========================================*/
+.buttons__operators {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.buttons__operators button {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+
+}
+
+.label__copy {
+}
+
+
+.inputs .first {
+  
+}
+
+
+.inputs p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.button__number__clear  {
+    display: flex;
+    justify-content: center;
+
+}
+
+.button__number__clear button {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
+
+/* BUTTONS NUMBERS
+=========================================*/
+
+
+
+
+
