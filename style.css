@@ -1,3 +1,4 @@
+
 body {
     background-color: black;
     padding: 0;
@@ -8,24 +9,71 @@ body {
     width: 100%;
     height: 100vh;
     background-color: blueviolet;
-    
     display: flex;
     justify-content: center;
+}
+
+/*settings*/
+
+.settings {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transition: 0.2s linear;
+}
+
+.settings img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.settings_enable {
+    transform: rotate(360deg);
+    left: 15%;
+    transition: 0.1s linear;
+}
+
+
+/*menu settings*/
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 99.9vh;
+    width: 270px;
+    background-color: #6300A6;
+    transition: 0.3s linear;
+}
+
+.menu a {
+    color: #e3cbff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*sub-menu*/
+
+.theme {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #410079;
 }
 
 /* CONTAINER 
 =========================================*/
 
 .container {
-    width: 420px;
-    height: 420px;
+    width: 405px;
+    height: 320px;
     background-color: #363636;
     border: solid 1px;
-    border-radius: 10px;
-    
     margin: auto;
+    transition: ease 0.1s;
 }
-
 
 /* INPUTS
 =========================================*/
@@ -35,59 +83,194 @@ body {
     justify-content: center;
     align-content: center;
 }
+
 .inputs input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     width: 107px;
     padding: 10px;
     margin: 2px;
-    border-radius: 5px;
     font-size: 16px;
+}
+
+.first input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.second input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.result.no_active:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.active {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    outline: 1px solid #1FF8FF;
 }
 
 /* BUTTONS OPERATIONS
 =========================================*/
+
 .buttons__operators {
     display: flex;
     justify-content: center;
     align-content: center;
 }
+
 .buttons__operators button {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 100px;
     height: 50px;
-
-}
-
-.label__copy {
-}
-
-
-.inputs .first {
-  
-}
-
-
-.inputs p {
-    color: #fff;
-    margin: 0;
-    padding: 0;
 }
 
 .button__number__clear  {
     display: flex;
     justify-content: center;
-
 }
 
 .button__number__clear button {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 100px;
     height: 50px;
 }
 
-/* BUTTONS NUMBERS
+/* BUTTONS-OPERATIONS STYLE
 =========================================*/
 
+.operation {
+    background: #6C30BF;
+    color: white;
+    border-style: none;
+}
+
+.operation.clear {
+    background: #6300A6;
+}
+
+.delete.operation {
+    font-size: 24px;
+}
 
 
+/* BUTTONS-NUMBERS STYLE
+=========================================*/
 
+.number {
+    background: white;
+    border-style: none;
+    font-weight: 500;
+}
 
+.number:hover {
+    border-style: solid;
+    border-color: #1FF8FF;
+}
+
+/* BUTTON More
+=========================================*/
+
+.button__more {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.button__more button{
+    width: 400px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    background: #6C30BF;
+    color: white;
+}
+
+.more__buttons {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.more__buttons button {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background: #6300A6;
+    color: white;
+}
+
+.hidden_div {
+    display: none;
+    transition: 0.3s linear;
+}
+
+.active_div {
+    display: block;
+    transition: 0.3s linear;
+}
+
+.blur {
+    filter: blur(2px);
+}
+/* ALL BUTTONS HOVER
+=========================================*/
+
+.buttons__lines button:hover {
+    border-style: solid;
+    border-color: #1FF8FF;
+}
+
+/* themes
+=========================================*/
+
+.red {
+    background: linear-gradient(90deg, rgba(255,0,71,1) 0%, rgba(207,63,148,1) 0%, rgba(158,0,0,1) 100%);
+
+    background-color: linear-gradient(90deg, rgba(255,0,71,1) 0%, rgba(207,63,148,1) 0%, rgba(158,0,0,1) 100%);
+}
+
+.red button:hover {
+    border-style: solid;
+    border-color: #F33D6E; 
+}
+
+.green {
+    background: linear-gradient(90deg, rgba(213,36,85,1) 0%, rgba(54,121,149,1) 0%, rgba(18,230,43,1) 100%);
+
+    background-color: linear-gradient(90deg, rgba(213,36,85,1) 0%, rgba(54,121,149,1) 0%, rgba(18,230,43,1) 100%);
+}
+
+.green button:hover{
+    border-style: solid;
+    border-color: #8BEA00; 
+}
+
+.black {
+    background: linear-gradient(90deg, rgba(213,36,85,1) 0%, rgba(33,33,33,1) 0%, rgba(111,111,111,1) 100%);
+
+    background-color: linear-gradient(90deg, rgba(213,36,85,1) 0%, rgba(33,33,33,1) 0%, rgba(111,111,111,1) 100%);
+}
+
+.black button:hover {
+    border-style: solid;
+    border-color: #ACACAC; 
+}
+
+.active_theme {
+    font-weight: 600;
+}
+
+.active_theme.theme_btns {
+    color: white;
+}

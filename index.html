@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!--меню настройки-->
+
+<div class="menu hidden_div">
+    <a href="#" id="themeBtn">Тема оформления</a>
+    <div class="theme hidden_div">
+        <a href="#" id="black" class="theme_btns">Black</a>
+        <a href="#" id="neon" class="theme_btns">Neon</a>
+        <a href="#" id="green" class="theme_btns">Green</a>
+        <a href="#" id="red" class="theme_btns">Red</a>
+    </div>
+    <a href="#">Обучение</a>
+    <a href="#">Хочу играть!</a>
+</div>
+
+<div class="settings"><img src="img/setting.png" alt=""></div>
+
+<!--Header-->
+
 <div class="header">
     <div class="container">
+    
+    
 
 <!--Поля 
       ------------------------------------>
        
         <div class="inputs">
-            <input type="text" class="first" placeholder="Первое число" autofocus>
-            <input type="text" class="second"
+            <input type="number" class="first" placeholder="Первое число" autofocus>
+            <input type="number" class="second"
             placeholder="Второе число">
-            <input type="text" class="result"
-            placeholder="Результат">
+            <input type="text" class="result no_active"
+            placeholder="Результат" readonly>
         </div>
 
 <!--Кнопки
@@ -29,47 +53,65 @@
 <div class="buttons__lines">
        
         <div class="buttons__operators">
-            <button class="plus">+</button>
-            <button class="minus">-</button>
-            <button class="multiple">*</button>
-            <button class="division">/</button>
+            <button class="plus operation">+</button>
+            <button class="minus operation">-</button>
+            <button class="multiple operation">*</button>
+            <button class="division operation">/</button>
         </div>
         
 <!--    Линия 2   -->
         
         <div class="button__number__clear">
-            <button class="one">1</button>
-            <button class="two">2</button>
-            <button class="three">3</button>
-            <button class="sqrt">√x</button>
+            <button class="one number">1</button>
+            <button class="two number">2</button>
+            <button class="three number">3</button>
+            <button class="sqrt operation">√x</button>
         </div>
         
 <!--    Линия 3   -->
         
          <div class="button__number__clear">
-            <button class="four">4</button>
-            <button class="five">5</button>
-            <button class="six">6</button>
-            <button class="square">x²</button>
+            <button class="four number">4</button>
+            <button class="five number">5</button>
+            <button class="six number">6</button>
+            <button class="square operation">x²</button>
         </div>
         
 <!--    Линия 4   -->
        
         <div class="button__number__clear">
-            <button class="seven">7</button>
-            <button class="eight">8</button>
-            <button class="nine">9</button>
-            <button class="clear">AC</button>
+            <button class="seven number">7</button>
+            <button class="eight number">8</button>
+            <button class="nine number">9</button>
+            <button class="clear operation">AC</button>
         </div>
         
 <!--    Линия 5   -->
        
        <div class="button__number__clear">
-            <button class="comma">.</button>
-            <button class="zero">0</button>
-            <button class="percent">%</button>
-            <button class="delete">DEL</button>
+            <button class="comma number">.</button>
+            <button class="zero number">0</button>
+            <button class="double_zero number">00</button>
+            <button class="delete operation">⇦</button>
         </div>
+        
+<!--    Линия 6   -->
+
+        <div class="button__more">
+            <!--вверх-->
+            <button class="more">🠋🠋🠋</button>
+            <!--вниз-->
+            <button id="more_btn_up" class="more hidden_div">🠉🠉🠉</button>
+            
+            <!--кнопки после открытия-->
+                <div id="more__buttons_div" class="more__buttons hidden_div">
+                    <button class="log operation">log</button>
+                    <button class="cosinus operation">Cos</button>
+                    <button class="sinus operation">Sin</button>
+                    <button class="pi operation">π</button>
+                </div>
+        </div>
+        
         
     </div> 
 </div>       
